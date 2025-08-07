@@ -33,10 +33,6 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
 
     public static final String API_TELEGRAM = "https://api.telegram.org/file/bot";
 
-    public TinderBoltApp() {
-        super(TELEGRAM_BOT_NAME, TELEGRAM_BOT_TOKEN);
-    }
-
     private ChatGPTService chatGPTService = new ChatGPTService(OPEN_AI_TOKEN);
 
     private DialogMode currentMode = null;
@@ -50,6 +46,10 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
     private UserInfo she;
 
     private int questionCountShe = 0;
+
+    public TinderBoltApp() {
+        super(TELEGRAM_BOT_NAME, TELEGRAM_BOT_TOKEN);
+    }
 
     @Override
     public void onUpdateEventReceived(Update update) throws TelegramApiException {
@@ -365,12 +365,6 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
             sendTextMessage(I_CAN_HELP_YOU_TO_FIND_A_MATCH);
 
             String userInfo = new UserInfo().toString();
-
-//            sendTextMessage(userInfo);
-
-//            List<List<PhotoSize>> userProfilePhotos = getUserProfilePhotos();
-//
-//            saveCurrentUserPhoto(userProfilePhotos);
 
             String mainMessage = loadMessage("main");
 
