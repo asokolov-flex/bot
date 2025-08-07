@@ -27,9 +27,9 @@ public class TinderBoltApp extends MultiSessionTelegramBot {
 
     public static final String TELEGRAM_BOT_NAME = "super_tinder_ai_bot"; //TODO: name of bot
 
-    public static final String TELEGRAM_BOT_TOKEN = "8449635438:AAFIogE8yecV8FZZwcWb9ozz_KgxP_47jSA"; //TODO: token of bot
+    public static final String TELEGRAM_BOT_TOKEN = "TELEGRAM_TOKEN"; //TODO: token of bot
 
-    public static final String OPEN_AI_TOKEN = "javcgknGzsQ2Hpv/Ox5/mEBt7jGZ9odEzk0d18IOaiI7kZO0GoWcatc1JMWuW+cZMw7KNEcSPPfJGOtkB5xmhKKVSHR7Oa/004F9C2eDQw2QnGq5nHX9QtYk4Ge9k+VPqgm+21HRqWwHfGpvNNoj5ZtytYrKXB3jv6MxFNeVNSkI6UbY1JO0hn1U7vIG45MSb0UpjfFsf/nG/M1IpLb2b5OlGC0UgMzeSRSpup+dqCs8wWidM="; //TODO: token GPT
+    public static final String OPEN_AI_TOKEN = "GPT TOKEN"; //TODO: token GPT
 
     public static final String API_TELEGRAM = "https://api.telegram.org/file/bot";
 
